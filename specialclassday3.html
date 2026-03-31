@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Task 1
+let fruits = ["apple", "banana", "mango", "orange", "grape"];
+console.log(fruits);
+
+// Task 2
+console.log(fruits[0], fruits[fruits.length - 1]);
+
+// Task 3
+console.log(fruits.length);
+
+// Task 4
+fruits.push("pineapple");
+
+// Task 5
+fruits.pop();
+
+// Task 6
+fruits.unshift("kiwi");
+
+// Task 7
+fruits.shift();
+
+// Task 8
+fruits[1] = "papaya";
+
+// Task 9
+let arr1 = [1, 2];
+let arr2 = [3, 4];
+let combined = [...arr1, ...arr2];
+console.log(combined);
+
+// Task 10
+console.log(fruits.includes("apple"));
+
+// Task 11
+for (let i = 0; i < fruits.length; i++) {
+  console.log(fruits[i]);
+}
+
+// Task 12
+for (let item of fruits) {
+  console.log(item);
+}
+
+// Task 13
+fruits.forEach((item, index) => {
+  console.log(index, item);
+});
+
+// Task 14
+let nums = [1, 2, 3, 4, 5];
+let sum = 0;
+for (let i = 0; i < nums.length; i++) sum += nums[i];
+console.log(sum);
+
+// Task 15
+let max = nums[0];
+for (let i = 1; i < nums.length; i++) {
+  if (nums[i] > max) max = nums[i];
+}
+console.log(max);
+
+// Task 16
+let count = 0;
+for (let i = 0; i < nums.length; i++) {
+  if (nums[i] % 2 === 0) count++;
+}
+console.log(count);
+
+// Task 17
+let marks = [30, 40, 50, 20];
+marks.forEach(m => {
+  if (m >= 35) console.log("Pass");
+});
+
+// Task 18
+let names = ["Arun", "Bala", "Anu", "John"];
+names.forEach(n => {
+  if (n.startsWith("A")) console.log(n);
+});
+
+// Task 19
+nums.reverse();
+console.log(nums);
+
+// Task 20
+nums.sort((a, b) => a - b);
+console.log(nums);
+
+// Task 21
+let doubled = nums.map(n => n * 2);
+console.log(doubled);
+
+// Task 22
+let evens = nums.filter(n => n % 2 === 0);
+console.log(evens);
+
+// Task 23
+let total = nums.reduce((a, b) => a + b, 0);
+console.log(total);
+
+// Task 24
+console.log(nums.find(n => n > 50));
+
+// Task 25
+console.log(nums.some(n => n > 100));
+
+// Task 26
+console.log(nums.every(n => n > 0));
+
+// Task 27
+let upper = names.map(n => n.toUpperCase());
+console.log(upper);
+
+// Task 28
+let filtered = [40, 55, 70, 30, 90].filter(n => n >= 50);
+console.log(filtered);
+
+// Task 29
+let multiplied = nums.map(n => n * 10);
+console.log(multiplied);
+
+// Task 30
+let avg = nums.reduce((a, b) => a + b, 0) / nums.length;
+console.log(avg);
+
+// Task 31
+let matrix = [
+  [10, 20],
+  [30, 40]
+];
+matrix.forEach(row => console.log(row));
+
+// Task 32
+console.log(matrix[1][1]);
+
+// Task 33
+let flat = [[1,2],[3,4],[5,6]].flat();
+console.log(flat);
+
+// Task 34
+let merged = [...new Set([...arr1, ...arr2])];
+console.log(merged);
+
+// Task 35
+let clean = [0, null, 2, undefined, "", 5].filter(v => v);
+console.log(clean);
+
+// Task 36
+let students = [
+  { name: "A", mark: 60 },
+  { name: "B", mark: 40 }
+];
+students.forEach(s => console.log(s.name));
+
+// Task 37
+let above60 = students.filter(s => s.mark > 60);
+console.log(above60);
+
+// Task 38
+students.sort((a, b) => b.mark - a.mark);
+console.log(students);
+
+// Task 39
+let top = students.reduce((a, b) => (a.mark > b.mark ? a : b));
+console.log(top);
+
+// Task 40
+console.log(["a", "b", "c"].join(""));
+    </script>
+</body>
+</html>
